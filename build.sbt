@@ -1,9 +1,9 @@
 
-name := "scredis"
+name := "scredis-pekko"
 organization := "com.github.scredis"
 
-scalaVersion := "2.13.3"
-crossScalaVersions := Seq("2.11.12", "2.12.12", scalaVersion.value)
+scalaVersion := "2.13.10"
+crossScalaVersions := Seq(/*"2.11.12", */"2.12.12", scalaVersion.value)
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -25,7 +25,7 @@ buildInfoOptions += BuildInfoOption.BuildTime
 
 git.remoteRepo := "git@github.com:scredis/scredis.git"
 
-val akkaV = "2.5.32"
+val pekkoV = "1.0.0"
 val loggingV = "3.9.2"
 val configV = "1.4.0"
 val collectionCompatV = "2.2.0"
@@ -34,7 +34,7 @@ val typesafeConfigV = "1.3.3"
 libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging" % loggingV,
   "com.typesafe" % "config" % typesafeConfigV,
-  "com.typesafe.akka" %% "akka-actor" % akkaV,
+  "org.apache.pekko" %% "pekko-actor" % pekkoV,
 
   "org.scala-lang.modules" %% "scala-collection-compat" % collectionCompatV,
 

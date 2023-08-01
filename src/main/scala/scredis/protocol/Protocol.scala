@@ -3,7 +3,7 @@ package scredis.protocol
 import java.nio.{Buffer, ByteBuffer}
 import java.util.concurrent.Semaphore
 
-import akka.actor.ActorRef
+import org.apache.pekko.actor.ActorRef
 import com.typesafe.scalalogging.LazyLogging
 import scredis._
 import scredis.exceptions._

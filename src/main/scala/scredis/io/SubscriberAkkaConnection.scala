@@ -2,7 +2,7 @@ package scredis.io
 
 import java.util.concurrent.Semaphore
 
-import akka.actor._
+import org.apache.pekko.actor._
 import scredis.Subscription
 import scredis.exceptions.RedisIOException
 import scredis.protocol._

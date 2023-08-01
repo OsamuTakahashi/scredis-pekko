@@ -8,7 +8,7 @@ object BlockingClientExample {
   // #blocking_client_example
 
   import scredis._
-  import akka.actor.ActorSystem
+  import org.apache.pekko.actor.ActorSystem
   import scala.util.{Success, Failure}
 
   // Defines an actor system to use with the blocking client
@@ -31,7 +31,7 @@ object ClientInitializationExample {
   // #client_initialization_example
   import scredis._
   import com.typesafe.config.ConfigFactory
-  import akka.actor.ActorSystem
+  import org.apache.pekko.actor.ActorSystem
 
   // Defines an actor system to use with the client
   implicit val system = ActorSystem("my-actor-system")
@@ -61,7 +61,7 @@ object ClientInitializationExample {
 object ClientExample {
   // #client_example
   import scredis._
-  import akka.actor.ActorSystem
+  import org.apache.pekko.actor.ActorSystem
   import scala.util.{ Success, Failure }
 
   // Defines an actor system to use with the client

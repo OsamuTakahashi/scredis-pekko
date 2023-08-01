@@ -3,10 +3,10 @@ package scredis.io
 import java.net.InetSocketAddress
 import java.util
 
-import akka.actor._
-import akka.io.Tcp
-import akka.routing._
-import akka.util.ByteString
+import org.apache.pekko.actor._
+import org.apache.pekko.io.Tcp
+import org.apache.pekko.routing._
+import org.apache.pekko.util.ByteString
 import scredis.{Subscription, Transaction}
 import scredis.exceptions.RedisIOException
 import scredis.protocol.requests.ConnectionRequests.{Auth, Quit, Select}

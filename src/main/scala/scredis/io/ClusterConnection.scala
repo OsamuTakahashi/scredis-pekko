@@ -1,6 +1,6 @@
 package scredis.io
 
-import akka.actor.ActorSystem
+import org.apache.pekko.actor.ActorSystem
 import com.typesafe.scalalogging.LazyLogging
 import scredis.exceptions._
 import scredis.protocol._

@@ -2,7 +2,7 @@ package scredis.io
 
 import java.util.concurrent.{CountDownLatch, TimeUnit}
 
-import akka.actor._
+import org.apache.pekko.actor._
 import com.typesafe.scalalogging.LazyLogging
 import scredis.protocol.{AuthConfig, Request}
 import scredis.protocol.requests.ConnectionRequests.{Auth, Quit, Select}

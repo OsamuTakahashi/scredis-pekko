@@ -1,6 +1,6 @@
 package scredis.util
 
-import akka.actor.ActorSystem
+import org.apache.pekko.actor.ActorSystem
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}

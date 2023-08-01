@@ -3,9 +3,9 @@ package scredis.io
 import java.net.InetSocketAddress
 import java.nio.Buffer
 
-import akka.actor._
-import akka.io.{IO, Tcp}
-import akka.util.ByteString
+import org.apache.pekko.actor._
+import org.apache.pekko.io.{IO, Tcp}
+import org.apache.pekko.util.ByteString
 import scredis.exceptions.RedisIOException
 import scredis.protocol.{Protocol, Request}
 
@@ -44,7 +44,7 @@ class IOActor(
     log.info(s"Connecting to $remote")
     IO(Tcp) ! Connect(
       remoteAddress = remote,
-      options = List[akka.io.Inet.SocketOption](
+      options = List[org.apache.pekko.io.Inet.SocketOption](
         SO.KeepAlive(true),
         SO.TcpNoDelay(true),
         SO.ReuseAddress(true),

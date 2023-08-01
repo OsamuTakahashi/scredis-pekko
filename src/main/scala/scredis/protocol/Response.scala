@@ -2,7 +2,7 @@ package scredis.protocol
 
 import java.nio.ByteBuffer
 
-import akka.util.ByteString
+import org.apache.pekko.util.ByteString
 import scredis.exceptions._
 import scredis.serialization.Reader
 import scredis.{ClusterSlotRange, ClusterSlotRangeNodeInfo, Server}

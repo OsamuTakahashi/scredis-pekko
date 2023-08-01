@@ -1,6 +1,6 @@
 package scredis
 
-import akka.actor.ActorSystem
+import org.apache.pekko.actor.ActorSystem
 import com.typesafe.config.Config
 import scredis.commands._
 import scredis.io.AkkaBlockingConnection

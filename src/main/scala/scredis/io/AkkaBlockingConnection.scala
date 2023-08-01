@@ -2,7 +2,7 @@ package scredis.io
 
 import java.util.concurrent.locks.ReentrantLock
 
-import akka.actor._
+import org.apache.pekko.actor._
 import scredis.exceptions._
 import scredis.protocol._
 import scredis.util.UniqueNameGenerator
